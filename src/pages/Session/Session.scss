@@ -1,0 +1,11 @@
+.session {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #000;
+
+  &__video {
+    height: 100%;
+    object-fit: cover;
+  }
+}

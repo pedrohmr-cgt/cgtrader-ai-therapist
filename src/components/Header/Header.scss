@@ -1,0 +1,13 @@
+.header {
+  margin: 1rem;
+  position: absolute;
+
+  &__logo {
+    font-weight: bold;
+    color: #fff;
+
+    &--dark {
+      color: #000;
+    }
+  }
+}
