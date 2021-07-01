@@ -8,4 +8,12 @@
     height: 100%;
     object-fit: cover;
   }
+
+  &__box {
+    width: 100%;
+    position: absolute;
+    bottom: 1rem;
+    padding: 1rem;
+    background: red;
+  }
 }

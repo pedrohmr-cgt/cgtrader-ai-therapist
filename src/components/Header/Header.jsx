@@ -1,11 +1,16 @@
 import React from "react";
 import { bool } from "prop-types";
+import { Typography } from "antd";
 
 import "./Header.scss";
 
+const { Title } = Typography;
+
 const Header = ({ dark }) => (
   <div className="header">
-    <div className={`header__logo${dark && "--dark"}`}>CGTHERAPIST</div>
+    <Title level={3}>
+      <div className={`header__logo${dark ? "--dark" : ""}`}>cgtherapy</div>
+    </Title>
   </div>
 );
 
