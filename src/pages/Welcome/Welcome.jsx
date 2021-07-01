@@ -9,7 +9,7 @@ const { Title } = Typography;
 
 const Welcome = () => (
   <>
-    <Header dark />
+    <Header />
     <div className="welcome">
       <div className="welcome__message">
         <Title level={2}>Welcome to your personal safespace.</Title>

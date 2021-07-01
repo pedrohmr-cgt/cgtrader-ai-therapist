@@ -171,25 +171,25 @@ const Welcome = () => {
   function getMoodIcon() {
     switch (mood) {
       case "neutral":
-        return "1F610";
+        return <>&#x1F610;</>;
 
       case "sad":
-        return "1F614";
+        return <>&#x1F614;</>;
 
       case "angry":
-        return "1F621";
+        return <>&#x1F621;</>;
 
       case "fearful":
-        return "1F628";
+        return <>&#x1F628;</>;
 
       case "disgusted":
-        return "1F922";
+        return <>&#x1F922;</>;
 
       case "surprised":
-        return "1F631";
+        return <>&#x1F631;</>;
 
       default:
-        return "1F603";
+        return <>&#x1F603;</>;
     }
   }
 
@@ -197,7 +197,7 @@ const Welcome = () => {
     return (
       <div className="session__box">
         <p className="session__box-paragraph">Condition:</p>
-        <div className="session__box-emoji">&#x1F641;</div>
+        <div className="session__box-emoji">{getMoodIcon()}</div>
         <p className="session__box-paragraph">Tips for well being:</p>
         <ul className="session__box-tips">{getMoodList()}</ul>
         <Button
