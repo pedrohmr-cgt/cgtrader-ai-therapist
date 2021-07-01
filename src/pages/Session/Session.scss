@@ -9,11 +9,81 @@
     object-fit: cover;
   }
 
-  &__box {
+  &__container {
     width: 100%;
     position: absolute;
     bottom: 1rem;
     padding: 1rem;
-    background: red;
+  }
+
+  &__box {
+    padding: 1.5rem 1rem;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 0.25rem;
+    color: #fff;
+
+    .session__box-paragraph {
+      color: #aaa;
+      margin: 0;
+    }
+
+    &-listening {
+      color: #aaa;
+      margin-bottom: 1rem;
+
+      span {
+        color: #fff;
+      }
+
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin-right: 1rem;
+        border-radius: 50%;
+        background-color: #d00;
+      }
+    }
+
+    &-processing::before {
+      background-color: #080;
+    }
+    
+    &-answer {
+      color: #aaa;
+      margin-bottom: 0.5rem;
+    }
+    
+    &-question {
+      color: #fff;
+      margin: 0;
+    }
+
+    .ant-btn-ghost {
+      margin-top: 2rem;
+      background: rgba(255, 255, 255, 0.2);
+      color: #fff;
+    }
+
+    &-emoji {
+      text-align: center;
+      font-size: 8rem;
+      line-height: 8rem;
+      margin: 1rem 0;
+    }
+
+    &-tips {
+      margin: 1rem 0 3rem 0;
+      padding-left: 2rem;
+
+      li {
+        margin-bottom: 0.5rem;
+
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
   }
 }
